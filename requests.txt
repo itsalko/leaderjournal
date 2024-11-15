@@ -1,0 +1,47 @@
+ //USERS requests
+ GET /api/users             //get all users
+ POST /api/users            //create new user
+ GET  /api/users/{id}       //get single user by id
+ PUT  /api/users/{id}       //update single user
+ DELETE /api/users/{id}     //delete single user
+
+
+ //CELLGROUPS requests
+ GET /api/cells              //get all cells
+ POST /api/cells             //create new cell
+ GET  /api/cells/{id}        //get single cell by id
+ GET  /api/cells/{id}/users  //get cell's members list
+ PUT  /api/cells/{id}        //update single cell 
+ DELETE /api/cells/{id}      //delete single cell
+
+
+ //CENTURIES requests
+ GET /api/centuries          //get all centuries
+ POST /api/centuries         //create new century
+ GET  /api/centuries/{id}    //get single century by id
+ GET  /api/centuries/{id}/cells //get cellgroups associated with century
+ GET  /api/centuries/{id}/users //get users associated with century
+ PUT  /api/centuries/{id}  //update single century 
+ DELETE /api/centuries/{id} //delete single century
+
+//CHURCHES requests
+ GET /api/churches  //get all churches
+ POST /api/churches  //create new church
+ GET  /api/churches/{id}  //get single church by id
+ GET  /api/churches/{id}/centuries //get centuries associated with church
+ GET  /api/churches/{id}/cells //get cellgroups associated with church
+ GET  /api/churches/{id}/users //get users associated with church
+ PUT  /api/churches/{id}  //update single church 
+ DELETE /api/churches/{id} //delete single church
+
+
+//REGIONS requests
+ GET /api/regions  //get all regions
+ POST /api/regions  //create new region
+ GET  /api/regions/{id}  //get single region by id
+ GET  /api/regions/{id}/churches //get churches associated with region
+ GET  /api/regions/{id}/centuries //get centuries associated with region
+ GET  /api/regions/{id}/cells //get cellgroups associated with region
+ GET  /api/regions/{id}/users //get users associated with region
+ PUT  /api/regions/{id}  //update single region 
+ DELETE /api/regions/{id} //delete single region

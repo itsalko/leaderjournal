@@ -1,0 +1,8 @@
+const config = {
+    jwt: {
+        secret: 'some secret code',
+        expiresIn: '1 hour'
+    }
+};
+
+module.exports = config;

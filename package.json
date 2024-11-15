@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "LeaderJournal backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mongo": "sudo mongod --dbpath=/mnt/WORK/MongoDB/db/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://itsalko@bitbucket.org/leaderjournal/backend.git"
+  },
+  "author": "itsalko",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/leaderjournal/backend#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.17.0",
+    "jsonwebtoken": "^8.5.0",
+    "jwt-simple": "^0.5.5",
+    "mongodb": "^3.3.3",
+    "mongoose": "^5.7.7",
+    "multer": "^1.4.1",
+    "rand-token": "^0.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
